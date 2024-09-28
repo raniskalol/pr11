@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    font-size: 16px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    box-shadow: 0px 10px 10px 0px rgba(0, 101, 0, 0.265);
+    margin-top: 20px;
+}
+
+.header img{
+    font-size: 75px;
+    height: 75px;
+}
+
+.menu{
+    display: flex;
+    gap: 3px;
+}
+.menu__elem{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.menu__btn{
+    background-color: rgb(70, 196, 99);
+    color: black;
+    border-radius: 10px;
+    padding: 8px 30px;
+    cursor: pointer;
+    transition: .2s ease-in;
+}
+
+
+.submenu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding-top: 10px;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: .2s ease-in;
+}
+.submenu.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.submenu__wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    border: 1px solid #8e0000;
+    background-color: white;
+    padding: 8px;
+}
+
+.submenu__elem{
+    background-color: transparent;
+    color: rgb(142, 0, 0);
+}
+.faq{
+    gap: 10px;
+    width: 1100px;
+    margin: 100px;
+}
+
+.faq__item h3{
+    font-size: 26px;
+    font-weight: 500;
+    color: white;
+    transition: .2s ease-in;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.faq__item p{
+    height: 0;
+    overflow: hidden;
+    color: white;
+    margin-top: 20px;
+    transition: .2s ease-in;
+}
+
+.arrowdow{
+    width: 50px;
+    margin-top: 10px;
+}
+
+.faq__item{
+    border-top: 1px white solid;
+    margin-top: 30px;
+}
+
+.zagolovok{
+    display: flex;
+}
